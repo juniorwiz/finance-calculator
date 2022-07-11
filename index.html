@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Finance Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+  <body>
+    <div class="container">
+        <div class="input-wrapper">
+            <div class="wrapper">
+                <label for="income">Income ($)</label>
+                <input type="number" id="income" value="25000">
+                <label for="income-percent">Yearly Change (%)</label>
+                <input type="number" id ="income-percent" value="0">
+            </div>
+            <div class=" wrapper">
+                <label for="expenses">Expenses ($)</label>
+                <input type="number" id="expenses" value="20000">
+                <label for="expenses-percent">Yearly Change (%)</label>
+                <input type="number" id ="expenses-percent" value="0">
+            </div>
+            <div class="wrapper">
+                <label for="savings">Savings ($)</label>
+                <input type="number" id="savings" value="10000">
+            </div>
+            <div class="wrapper">
+                <label for="rate">Rate (%)</label>
+                <input type="number" id="rate" value="4">
+            </div>
+        </div>
+        <button id="calculate-btn">Calculate</button>
+        <div id="result"></div>
+    </div>
+
+	<script src="script.js"></script>
+  </body>
+</html>
